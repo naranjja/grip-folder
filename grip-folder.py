@@ -33,7 +33,7 @@ def find_markdown_files(path):
 
 
 if __name__ == '__main__':
-    path = argv[1]  # get the first argument
-    ignored = ['.git']
+    path = argv[1]  # get the first argument as the path
+    ignored = ['.git']  # ignore the following folders and file names
 
     find_markdown_files(path)

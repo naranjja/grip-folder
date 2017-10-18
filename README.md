@@ -34,6 +34,8 @@ python grip-folder.py ./
 ```
 > NOTE: You can also pass the relative path to some folder that contains Markdown files instead of copying and pasting.
 
+Additionally, the script contains a list called `ignored`. You can pass folder and file names if you wish to ignore them.
+
 ---
 
 ## Example
@@ -78,6 +80,6 @@ This will recursively enter all folders, make the necessary references and conve
 ---
 
 ## Credits
-**grip** is a great tool created by [Joe Esposito](https://github.com/joeyespo).
+**[grip](https://github.com/joeyespo/grip)** is a great tool created by [Joe Esposito](https://github.com/joeyespo).
 
 This script simply uses his tool to recursively convert Markdown files in a folder structure.
