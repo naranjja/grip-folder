@@ -18,7 +18,7 @@ def change_relative_links(path, html_file):
 
 
 def convert_markdown(path, md_file):
-    if check_call(['grip', path + md_file, '--export']) == 0:
+    if check_call(['grip', path + md_file, '--export']) == 0:  # call grip
         change_relative_links(path, md_file.replace('.md', '.html'))
 
 
@@ -27,7 +27,7 @@ def find_markdown_files(path):
     for el in listdir(path):  # list all elements in path
         if el not in ignored:  # if the element is not ignored
             if isdir(path + el):  # if element is a folder
-                find_markdown_files(path + el)
+                find_markdown_files(path + el)  # recursion
             elif el.endswith('.md'):  # else if element is a Markdown file
                 convert_markdown(path, el)
 

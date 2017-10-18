@@ -66,7 +66,7 @@ The easiest way would be for you to copy `grip-folder.py` and paste it on the `w
 │   ├── images
 │   │   ├── image1.png
 │   │   └── image2.png
-│   ├── README.md
+│   └── README.md
 └────── grip-folder.py
 ```
 
@@ -75,7 +75,26 @@ Then simply run:
 python grip-folder.py ./
 ```
 
-This will recursively enter all folders, make the necessary references and convert the GitHub Markdown to HTML using **grip**.
+This will recursively enter all folders, make the necessary references and convert the GitHub Markdown to HTML using **grip**. The HTML files will be right next to their Markdown counterparts:
+
+```bash
+├── wiki
+│   ├── chapters
+│   │   ├── chapter1.md
+│   │   ├── chapter1.html
+│   │   ├── chapter2.md
+│   │   ├── chapter2.html
+│   │   ├── chapter3.md
+│   │   ├── chapter3.html
+│   │   └── chapter4.md
+│   │   └── chapter4.html
+│   ├── images
+│   │   ├── image1.png
+│   │   └── image2.png
+│   ├── README.md
+│   └── README.html
+└────── grip-folder.py
+```
 
 ---
 
