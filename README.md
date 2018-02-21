@@ -1,4 +1,4 @@
-# grip-folder
+# :file_folder: grip-folder
 Script to render an entire folder's GitHub Markdown files to HTML while keeping relative links.
 
 ---
